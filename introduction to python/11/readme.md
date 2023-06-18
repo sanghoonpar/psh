@@ -57,5 +57,100 @@ with open("member.json","r",encoding="utf-8")as f:
     dict=json.load(f)
     print(dict)
 ```
-
-
+## 🔥`class`
+```python
+class Cat:
+    kor_name="로키"
+    eng_name="rocky"
+    age=2
+    def sound(self):
+        print("야옹~~~")
+    def speed(self):
+        print("엄청 빠르다")
+mycat=Cat()
+print("한글이름:",mycat.kor_name)
+print("영어이름:",mycat.kor_name)
+print("나이:",mycat.kor_name)
+mycat.sound()
+mycat.speed()
+```
+## 🔥`Attribute`
+```python
+class Student:
+    pet=[]
+    def push_pet(self,x):
+        self.pet.append(x)
+john=Student()
+john.push_pet("고양이")
+print(john.pet)
+sally=Student()
+sally.push_pet("이구아나")
+print(sally.pet)
+class Student:
+    def __init__(self):
+        self.pet=[]
+    def push_pet(self,x):
+        self.pet.append(x)
+john=Student()
+john.push_pet("고양이")
+print(john.pet)
+sally=Student()
+sally.push_pet("이구아나")
+print(sally.pet)
+```
+## 🔥`Method Overriding`
+```python
+class Person:
+    def __init__(self,name):
+        self.name=name
+    def show_name(self):
+        print(self.name)
+class Student(Person):
+    pass
+x=Student("('홍길동')")
+x.show_name()
+a="황희찬","황의조","황인범"
+x=Student(a)
+x.show_name()
+class Person:
+    def __init__(self,name):
+        self.name=name
+    def show_name(self):
+        print(self.name)
+    def show_age(self):
+        print(self.age)
+class Student(Person):
+    def __init__(self,name,age):
+        super().__init__(name)
+        self.age=age
+x=Student("홍길동",20)
+x.show_name()
+x.show_age()
+class Person:
+    def __init__(self,name):
+        self.name=name        
+    def show_name(self):
+        print(self.name)
+class Student(Person):
+    def show_name(self):
+        print("환영합니다!!!")
+        print(self.name+"님 반갑습니다.")
+x=Student("홍길동")
+x.show_name()
+class person:
+    def __init__(self,name):
+        self.name=name
+    def show_name(self):
+        print(self.name)
+    def show_age(self):
+        print(self.ago)
+class Student(Person):
+    def __init__(self,name,age):
+        super(). __init__(name)
+        self.age=age
+    def introduction(self):
+        print("이름은 %s이고 나이는 %d살 입니다."%(self.name,self.age))
+x=Student("홍길동",20)
+x.show_name()
+x.introduction()
+```

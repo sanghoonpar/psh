@@ -1,3 +1,0 @@
-import module1
-module1.greet1("Nick")
-module1.greet2("Mike")

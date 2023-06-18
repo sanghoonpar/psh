@@ -43,6 +43,8 @@ random.shuffle(list1)
 print("순서가 변경된 리스트:",list1)
 
 x=["가위","바위","보"]
+current_time=time.localtime(time.time())
+print("게임 시작 시간:",time.strftime("%I:%M:%S %p",current_time))
 플레이어1=random.choice(["가위","바위","보"])
 플레이어2=random.choice(["가위","바위","보"])
 print("나:"+플레이어1)
@@ -71,3 +73,4 @@ while True:
     else :
          again=input("(계속하려면 y 그만하려면 n)") 
 print("game over")
+print("게임 종료 시간:",time.localtime("%I:%M:%S %p",time.strftime))
