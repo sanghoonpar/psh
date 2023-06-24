@@ -154,3 +154,33 @@ x=Student("홍길동",20)
 x.show_name()
 x.introduction()
 ```
+## 🔥`lnheritance`
+```python
+class p:
+    def __init__(self,name):
+        self.name=name
+    def show_name(self):
+        print(self.name)
+class s(p):
+    def show_name(self):
+        print("환영합니다 :)")
+        print(self.name+"님 반갑습니다.")
+x=s("홍길동")
+x.show_name()
+class P:
+    def __init__(self,name):
+        self.name=name
+    def show_name(self):
+        print(self.name)
+    def show_age(self):
+        print(self.age)
+class S(P):
+    def __init__(self,name,age):
+        super().__init__(name)
+        self.age=age
+    def introduction(self):
+        print("이름은 %s이고 나이는%d살 입니당?"%(self.name,self.age))
+x=S("홍길동",20)
+x.show_name()
+x.introduction
+```    

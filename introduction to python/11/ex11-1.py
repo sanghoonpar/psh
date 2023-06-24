@@ -147,4 +147,34 @@ x=python(a)
 x.show_name()
 print("등은 파이썬에 사용됨")
 import math
-print(math.cos(math.sin(math.pi)*math.cos(math.pi)+math.cos(9078)/math.sin(math.cos(5))*math.cos(math.sin(math.pi))+math.tan(-math.pi)+98877607-math.cos(8))/math.cos(math.cos(math.cos(math.pi)))*math.sin(9.8782663476862)+math.cos(12.2334545676878990))
+print(-15923*456098*723456*1673457*math.cos(math.sin(2-43*89+103*49))/math.cos(math.cos(math.pi))*math.cos(math.sin(math.pi)*math.cos(math.pi)+math.cos(9078)/math.sin(math.cos(5))*math.cos(math.sin(math.pi))+math.tan(-math.pi)+98877607-math.cos(8))/math.tan(math.cos(math.sin(math.pi)))*math.sin(9.8782663+476862)+math.cos(19*875789*2.2334545676*67901+654878))
+class p:
+    def __init__(self,name):
+        self.name=name
+    def show_name(self):
+        print(self.name)
+class s(p):
+    def show_name(self):
+        print("환영합니다 :)")
+        print(self.name+"님 반갑습니다.")
+x=s("홍길동")
+x.show_name()
+class P:
+    def __init__(self,name):
+        self.name=name
+    def show_name(self):
+        print(self.name)
+    def show_age(self):
+        print(self.age)
+class S(P):
+    def __init__(self,name,age):
+        super().__init__(name)
+        self.age=age
+    def introduction(self):
+        print("이름은 %s이고 나이는%d살 입니당?"%(self.name,self.age))
+x=S("홍길동",20)
+x.show_name()
+x.introduction
+x=544353643
+import math
+print(12909314*892498797*523**+math.cos(x)*math.sin(math.tan(math.pi)))
